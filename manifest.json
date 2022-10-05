@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Calculator",
+    "description": "A simple standard Calculator for Chrome",
+    "version": "1.0.0",
+    "action": {
+        "default_title": "Chrome Addon v3 Starter",
+        "default_popup": "popup/index.html"
+    },
+    "permissions": [],
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
