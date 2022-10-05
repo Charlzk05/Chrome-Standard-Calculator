@@ -13,6 +13,8 @@ const divideButton = document.getElementById("divideButton");
 const equationButton = document.getElementById("equationButton");
 const sqrtButton = document.getElementById("sqrtButton");
 
+const darkModeBox = document.getElementById("darkModeBox");
+
 // FUNCTIONS
 function addtional(o1, o2) {
     var a = o1 + o2;
@@ -77,5 +79,15 @@ equationButton.addEventListener("click", function() {
         answerText.innerHTML = multiply(o1, o2);
     } else if (operationText.innerHTML == "÷") {
         answerText.innerHTML = divide(o1, o2);
+    }
+});
+
+darkModeBox.addEventListener("change", function(event) {
+    const style = document.getElementsByTagName("link")[0];
+
+    if (event.target.checked == true) {
+        style.href = "water.css/dark.css";
+    } else {
+        style.href = "water.css/light.css";
     }
 });

@@ -5,35 +5,41 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='water.css/light.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
-<body>
+<body style="width: 300px;">
     <div style="padding: 10px;">
         <h2>Standard</h2>
         <div>
+            <input type="checkbox" id="darkModeBox">Dark Mode
+        </div>
+        <div>
             <div id="firstOperandContainer">
                 <p>Operand 1: </p>
-                <input type="text" id="firstOperandBox">
+                <input type="text" id="firstOperandBox" style="width: 93%;">
             </div>
         </div>
         <div>
-            <p style="color: darkgray;">Operation: <span id="operationText" style="color: black; font-weight: 600;"></span></p>
+            <p style="color: darkgray;">Operation: <span id="operationText" style="font-weight: 600;"></span></p>
         </div>
         <div id="secondOperandContainer">
             <p>Operand 2: </p>
-            <input type="text" id="secondOperandBox" disabled> 
+            <input type="text" id="secondOperandBox" style="width: 93%;" disabled> 
         </div>
         <div>
-            <p style="color: darkgray;">Answer: <span id="answerText" style="color: black; font-weight: 600;"></span></p>
+            <p style="color: darkgray;">Answer: <span id="answerText" style="font-weight: 600;"></span></p>
         </div>
-        <div>
-            <button id="additionalButton">+</button>
-            <button id="substractButton">−</button>
-            <button id="multiplyButton">×</button>
-            <button id="divideButton">÷</button>
-            <button style="background-color: #fc5d70;" id="equationButton">=</button>
-            <button style="background-color: #52a7f7;" id="sqrtButton">√</button>
-        </div>
+        <center>
+            <div>
+                <button id="additionalButton" class="buttonStyle">+</button>
+                <button id="substractButton" class="buttonStyle">−</button>
+                <button id="multiplyButton" class="buttonStyle">×</button>
+                <button id="divideButton" class="buttonStyle">÷</button>
+                <button style="background-color: #fc5d70;" id="equationButton" class="buttonStyle">=</button>
+                <button style="background-color: #52a7f7;" id="sqrtButton" class="buttonStyle">√</button>
+            </div>
+        </center>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>
