@@ -1,8 +1,13 @@
 {
     "manifest_version": 3,
     "name": "Calculator",
-    "description": "A simple standard Calculator for Chrome",
+    "description": "A simple standard Calculator for Chrome.",
     "version": "1.0.0",
+    "icons": {
+        "16": "logo/logo-16.png",
+        "48": "logo/logo-48.png",
+        "128": "logo/logo-128.png"
+    },
     "action": {
         "default_title": "Chrome Addon v3 Starter",
         "default_popup": "popup/index.html"
