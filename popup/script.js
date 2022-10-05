@@ -57,7 +57,6 @@ divideButton.addEventListener("click", function() {
 
 sqrtButton.addEventListener("click", function() {
     const o1 = firstOperandBox.value;
-    const o2 = secondOperandBox.value;
 
     if (o1 == "") {
 
@@ -71,7 +70,7 @@ equationButton.addEventListener("click", function() {
     const o2 = secondOperandBox.value;
 
     if (operationText.innerHTML == "+") {
-        answerText.innerHTML = addtional(o1, o1);
+        answerText.innerHTML = addtional(o1, o2);
     } else if (operationText.innerHTML == "−") {
         answerText.innerHTML = substraction(o1, o2);
     } else if (operationText.innerHTML == "×") {
