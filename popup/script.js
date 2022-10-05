@@ -86,8 +86,8 @@ darkModeBox.addEventListener("change", function(event) {
     const style = document.getElementsByTagName("link")[0];
 
     if (event.target.checked == true) {
-        style.href = "water.css/dark.css";
+        style.href = "https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css";
     } else {
-        style.href = "water.css/light.css";
+        style.href = "https://cdn.jsdelivr.net/npm/water.css@2/out/light.css";
     }
 });
